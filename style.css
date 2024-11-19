@@ -6,3 +6,12 @@ body {
 	margin: 0;
 	background-color: #f79100;
 }
+
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(6, minmax(100px, auto));
+	position: relative;
+}
