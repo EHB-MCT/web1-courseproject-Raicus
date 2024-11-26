@@ -8,7 +8,7 @@ body {
 }
 
 .wrapper {
-	width: 100%;
+	width: 95%;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -74,6 +74,10 @@ header nav ul li a {
 	text-decoration: none;
 }
 
-.welkom img {
-	width: 1200%;
+.welkom {
+	grid-column: 1/13;
+}
+
+img {
+	width: 100%;
 }
