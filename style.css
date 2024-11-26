@@ -80,9 +80,13 @@ header nav ul li a {
 
 .narutohome {
 	grid-column: 8/13;
-	width: 100%;
 	position: relative;
 	margin-top: -90px;
+}
+
+.narutoloop {
+	grid-column: 1/13;
+	margin-left: -3%;
 }
 
 img {
