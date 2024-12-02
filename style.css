@@ -90,6 +90,7 @@ header nav ul li a {
 	width: 100%;
 	animation: mymove 5s infinite;
 	animation-timing-function: linear; /* zelfde snelheid */
+	grid-column: 1/13;
 }
 
 @keyframes mymove {
