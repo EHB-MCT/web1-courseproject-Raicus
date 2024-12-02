@@ -5,6 +5,7 @@ body {
 	font-family: "Noto Sans", sans-serif;
 	margin: 0;
 	background-color: #f79100;
+	overflow-x: hidden; /* Dit is nodig om het tweede deel van de afbeelding te verbergen */
 }
 
 .wrapper {
@@ -84,9 +85,20 @@ header nav ul li a {
 	margin-top: -90px;
 }
 
-.narutoloop {
-	grid-column: 1/13;
-	margin-left: -3%;
+.loop {
+	display: flex;
+	width: 100%;
+	animation: mymove 5s infinite;
+	animation-timing-function: linear; /* zelfde snelheid */
+}
+
+@keyframes mymove {
+	from {
+		transform: translateX(0%);
+	}
+	to {
+		transform: translateX(-100%);
+	}
 }
 
 img {
