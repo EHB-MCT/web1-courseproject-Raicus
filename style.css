@@ -107,6 +107,18 @@ img {
 	width: 100%;
 }
 
+.button {
+	background-color: #f79100;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 25px;
+}
+
+.button:hover {
+	background-color: grey;
+}
+
 h1 {
 	color: white;
 	font-weight: bolder;
@@ -142,4 +154,9 @@ footer .eerste {
 footer .info p {
 	font-weight: 400;
 	font-size: 22px;
+}
+
+footer img {
+	width: 3%;
+	position: absolute;
 }
