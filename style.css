@@ -9,7 +9,7 @@ body {
 }
 
 .wrapper {
-	width: 95%;
+	width: 100%;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -76,7 +76,7 @@ header nav ul li a {
 }
 
 .welkom {
-	grid-column: 1/8;
+	grid-column: 2/8;
 }
 
 .narutohome {
@@ -112,8 +112,26 @@ h1 {
 	font-size: 60px;
 }
 
+h2 {
+	color: #f79100;
+	font-size: 55px;
+}
+
 p {
 	color: white;
 	font-weight: bold;
 	font-size: 25px;
+}
+
+footer {
+	background-color: #000;
+	text-align: center;
+}
+
+footer .orange {
+	color: #f79100;
+}
+
+footer .eerste {
+	font-weight: 500;
 }
