@@ -27,7 +27,7 @@ body {
 }
 
 #grid p {
-	border: 1px solid #000;
+	border: 1px solid red;
 	margin: 0;
 	opacity: 0.2;
 }
@@ -107,6 +107,9 @@ img {
 	width: 100%;
 }
 
+a:hover {
+	color: orange;
+}
 .button {
 	background-color: #f79100;
 	padding: 10px;
@@ -127,7 +130,8 @@ h1 {
 
 h2 {
 	color: #f79100;
-	font-size: 55px;
+	font-size: 60px;
+	margin: 2px;
 }
 
 p {
@@ -156,7 +160,14 @@ footer .info p {
 	font-size: 22px;
 }
 
-footer img {
-	width: 3%;
-	position: absolute;
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.flex img {
+	padding-top: 10px;
+	height: 45px;
 }
