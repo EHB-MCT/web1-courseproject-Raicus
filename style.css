@@ -120,7 +120,7 @@ h2 {
 p {
 	color: white;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 22px;
 }
 
 footer {
@@ -133,5 +133,11 @@ footer .orange {
 }
 
 footer .eerste {
-	font-weight: 500;
+	font-weight: 600;
+	color: #f79100;
+}
+
+footer .info p {
+	font-weight: 400;
+	font-size: 22px;
 }
