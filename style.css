@@ -176,4 +176,8 @@ footer .info p {
 	body {
 		font-size: 90%;
 	}
+
+	.wrapper {
+		grid-template-columns: repeat(6, 1fr);
+	}
 }
