@@ -180,4 +180,10 @@ footer .info p {
 	.wrapper {
 		grid-template-columns: repeat(6, 1fr);
 	}
+
+	header {
+		grid-template-columns: repeat(6, 1fr);
+		height: auto;
+		padding: 10px;
+	}
 }
