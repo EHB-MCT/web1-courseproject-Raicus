@@ -147,8 +147,8 @@ header nav ul li a {
 
 .narutohome {
 	grid-column: 8/13;
+	height: 100%;
 	position: relative;
-	margin-top: -90px;
 	animation-name: narutohome;
 	animation-duration: 2s;
 	animation-timing-function: ease;
@@ -193,7 +193,7 @@ a:hover {
 h1 {
 	color: white;
 	font-weight: bolder;
-	font-size: 60px;
+	font-size: 50px;
 	animation-name: lefttoright;
 	animation-duration: 1.5s;
 	animation-timing-function: ease;
@@ -201,7 +201,7 @@ h1 {
 
 h2 {
 	color: #f79100;
-	font-size: 60px;
+	font-size: 50px;
 	margin: 2px;
 }
 
@@ -297,7 +297,7 @@ footer .info p {
 
 	h1,
 	h2 {
-		font-size: 45px;
+		font-size: 40px;
 	}
 
 	p {
@@ -335,7 +335,7 @@ footer .info p {
 
 	.off-screen-menu {
 		background-color: black;
-		height: 61.8%;
+		height: 100%;
 		width: 100%;
 		max-width: 760px;
 		position: absolute;
@@ -401,17 +401,5 @@ footer .info p {
 	.ham-menu.active span:nth-child(1) {
 		top: 40%;
 		transform: translate(-50%, 50%) rotate(-45deg);
-	}
-}
-
-@media (max-width: 690px) {
-	.off-screen-menu {
-		height: 55%;
-	}
-}
-
-@media (max-width: 600px) {
-	.off-screen-menu {
-		height: 48%;
 	}
 }
