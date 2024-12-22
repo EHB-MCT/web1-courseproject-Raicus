@@ -146,7 +146,7 @@ header nav ul li a {
 	}
 }
 
-.narutoervaring {
+.naruto-ervaring {
 	grid-column: 1/6;
 	position: relative;
 	height: 100%;
@@ -280,7 +280,7 @@ footer .info p {
 		grid-column: 3/7;
 	}
 
-	.narutoervaring {
+	.naruto-ervaring {
 		grid-column: 2/6;
 		margin-top: 10px;
 		order: 1;
