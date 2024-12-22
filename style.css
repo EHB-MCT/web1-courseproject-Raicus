@@ -5,6 +5,9 @@ body {
 	font-family: "Noto Sans", sans-serif;
 	margin: 0;
 	background-color: #f79100;
+	animation-name: opacity;
+	animation-duration: 1s;
+	animation-timing-function: ease;
 	overflow-x: hidden; /* Dit is nodig om het tweede deel van de afbeelding te verbergen */
 }
 
@@ -34,6 +37,9 @@ body {
 
 .outer-wrapper {
 	background-color: black;
+	animation-name: opacity;
+	animation-duration: 0.7s;
+	animation-timing-function: ease;
 }
 
 header {
@@ -49,11 +55,59 @@ header img {
 	grid-column: 1/2;
 	width: 150%;
 	align-self: center;
+	animation-name: lefttoright;
+	animation-duration: 1.5s;
+	animation-timing-function: ease;
+}
+
+@keyframes lefttoright {
+	from {
+		transform: translateX(-200%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
+@keyframes frombottom {
+	from {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes navanimatie {
+	from {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
+@keyframes opacity {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 header nav {
 	grid-column: 5/13;
 	align-self: center;
+	animation-name: navanimatie;
+	animation-duration: 1.5s;
+	animation-timing-function: ease;
 }
 
 header nav ul {
@@ -80,10 +134,24 @@ header nav ul li a {
 	grid-column: 2/8;
 }
 
+@keyframes narutohome {
+	from {
+		transform: translateY(30%);
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
 .narutohome {
 	grid-column: 8/13;
 	position: relative;
 	margin-top: -90px;
+	animation-name: narutohome;
+	animation-duration: 1.5s;
+	animation-timing-function: ease;
 }
 
 .loop {
@@ -126,6 +194,9 @@ h1 {
 	color: white;
 	font-weight: bolder;
 	font-size: 60px;
+	animation-name: lefttoright;
+	animation-duration: 1.5s;
+	animation-timing-function: ease;
 }
 
 h2 {
@@ -138,6 +209,9 @@ p {
 	color: white;
 	font-weight: bold;
 	font-size: 22px;
+	animation-name: lefttoright;
+	animation-duration: 1.5s;
+	animation-timing-function: ease;
 }
 
 footer {
@@ -153,11 +227,17 @@ footer .orange {
 footer .eerste {
 	font-weight: 600;
 	color: #f79100;
+	animation-name: frombottom;
+	animation-duration: 2.5s;
+	animation-timing-function: ease;
 }
 
 footer .info p {
 	font-weight: 400;
 	font-size: 22px;
+	animation-name: frombottom;
+	animation-duration: 2.5s;
+	animation-timing-function: ease;
 }
 
 .flex {
@@ -165,6 +245,9 @@ footer .info p {
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
+	animation-name: frombottom;
+	animation-duration: 2s;
+	animation-timing-function: ease;
 }
 
 .flex img {
