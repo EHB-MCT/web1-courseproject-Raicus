@@ -23,7 +23,7 @@ body {
 #grid {
 	position: absolute;
 	display: none;
-	/* display: none; */
+	/* display: grid; */
 	grid-template-columns: repeat(12, 1fr);
 	width: 100%;
 	height: 100%;
@@ -129,7 +129,7 @@ header nav ul li a {
 	text-decoration: none;
 }
 
-.welkom {
+.vaardigheden {
 	padding-top: 80px;
 	grid-column: 2/8;
 }
@@ -145,10 +145,10 @@ header nav ul li a {
 	}
 }
 
-.narutohome {
+.naruto-vaardigheden {
 	grid-column: 8/13;
+	height: 100%;
 	position: relative;
-	margin-top: -90px;
 	animation-name: narutohome;
 	animation-duration: 2s;
 	animation-timing-function: ease;
@@ -160,6 +160,7 @@ header nav ul li a {
 	animation: mymove 5s infinite;
 	animation-timing-function: linear; /* zelfde snelheid */
 	grid-column: 1/13;
+	z-index: 2;
 }
 
 @keyframes mymove {
@@ -178,6 +179,7 @@ img {
 a:hover {
 	color: orange;
 }
+
 .button {
 	background-color: #f79100;
 	padding: 10px;
@@ -194,7 +196,7 @@ h1 {
 	color: white;
 	font-weight: bolder;
 	font-size: 50px;
-	animation-name: lefttoright;
+	animation-name: opacity;
 	animation-duration: 1.5s;
 	animation-timing-function: ease;
 }
@@ -209,7 +211,7 @@ p {
 	color: white;
 	font-weight: bold;
 	font-size: 22px;
-	animation-name: lefttoright;
+	animation-name: frombottom;
 	animation-duration: 1.5s;
 	animation-timing-function: ease;
 }
@@ -279,7 +281,7 @@ footer .info p {
 		grid-column: 3/7;
 	}
 
-	.narutohome {
+	.naruto-vaardigheden {
 		grid-column: 2/6;
 		margin-top: 20px;
 	}
@@ -289,7 +291,7 @@ footer .info p {
 		grid-column: 1/7;
 	}
 
-	.welkom {
+	.vaardigheden {
 		text-align: center;
 		grid-column: 2/6;
 		margin-top: -50px;
@@ -401,17 +403,5 @@ footer .info p {
 	.ham-menu.active span:nth-child(1) {
 		top: 40%;
 		transform: translate(-50%, 50%) rotate(-45deg);
-	}
-}
-
-@media (max-width: 690px) {
-	.off-screen-menu {
-		height: 55%;
-	}
-}
-
-@media (max-width: 600px) {
-	.off-screen-menu {
-		height: 48%;
 	}
 }
