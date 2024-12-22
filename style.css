@@ -219,4 +219,16 @@ footer .info p {
 	p {
 		font-size: 18px;
 	}
+
+	footer .info p {
+		font-size: 18px;
+	}
+
+	footer .flex {
+		gap: 10px;
+	}
+
+	footer .flex img {
+		height: 38px;
+	}
 }
