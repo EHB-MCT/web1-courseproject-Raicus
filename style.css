@@ -197,7 +197,7 @@ footer .info p {
 	}
 
 	.narutohome {
-		grid-column: 1/7;
+		grid-column: 2/6;
 		margin-top: 20px;
 	}
 
@@ -208,6 +208,15 @@ footer .info p {
 
 	.welkom {
 		text-align: center;
-		grid-column: 1/7;
+		grid-column: 2/6;
+	}
+
+	h1,
+	h2 {
+		font-size: 45px;
+	}
+
+	p {
+		font-size: 18px;
 	}
 }
