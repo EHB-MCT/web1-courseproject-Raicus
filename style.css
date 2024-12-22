@@ -209,6 +209,7 @@ footer .info p {
 	.welkom {
 		text-align: center;
 		grid-column: 2/6;
+		margin-top: -50px;
 	}
 
 	h1,
@@ -262,7 +263,7 @@ footer .info p {
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		font-size: 40px;
+		font-size: 30px;
 		transition: 0.5s ease;
 		padding-top: 30px;
 		z-index: 1;
@@ -294,7 +295,7 @@ footer .info p {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		transition: 0.3s ease;
+		transition: 0.5s ease;
 	}
 
 	.ham-menu span:nth-child(1) {
@@ -317,5 +318,11 @@ footer .info p {
 	.ham-menu.active span:nth-child(1) {
 		top: 40%;
 		transform: translate(-50%, 50%) rotate(-45deg);
+	}
+}
+
+@media (max-width: 480px) {
+	.off-screen-menu {
+		height: 40%;
 	}
 }
