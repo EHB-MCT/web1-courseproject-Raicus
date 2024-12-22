@@ -244,22 +244,28 @@ footer .info p {
 
 	/* off-screen-menu (hamburger by Treehouse een beetje aangepast door mij)*/
 
+	.off-screen-menu ul li {
+		display: block;
+		margin: 10px;
+	}
+
 	.off-screen-menu {
-		background-color: #000;
-		height: 100%;
+		background-color: black;
+		height: 51.5%;
 		width: 100%;
-		max-width: 450px;
-		position: fixed;
+		max-width: 760px;
+		position: absolute;
 		top: 0;
-		right: -450px;
+		right: -770px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
 		font-size: 40px;
-		transition: 0.3s ease;
+		transition: 0.5s ease;
 		padding-top: 30px;
+		z-index: 1;
 	}
 
 	.off-screen-menu.active {
@@ -269,7 +275,6 @@ footer .info p {
 	nav {
 		padding: 1rem;
 		display: flex;
-		background-color: black;
 	}
 
 	.ham-menu {
@@ -277,6 +282,7 @@ footer .info p {
 		width: 50px;
 		margin-left: auto;
 		position: relative;
+		z-index: 2;
 	}
 
 	.ham-menu span {
